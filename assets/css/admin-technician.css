@@ -1,0 +1,176 @@
+.tech-workload-header{
+    margin-bottom:25px;
+}
+
+.tech-workload-header h1{
+    font-size:32px;
+}
+
+.tech-workload-header p{
+    color:#666;
+    margin-top:8px;
+}
+
+.tech-workload-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.tech-workload-card,
+.tech-detail-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.tech-profile-row{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.tech-profile-row img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid red;
+}
+
+.tech-profile-row h3{
+    margin-bottom:5px;
+}
+
+.tech-profile-row p{
+    color:#666;
+}
+
+.tech-profile-row.big img{
+    width:100px;
+    height:100px;
+}
+
+.workload-stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.workload-stats div{
+    background:#fafafa;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.workload-stats span{
+    color:red;
+    font-size:26px;
+    font-weight:900;
+}
+
+.workload-stats p{
+    font-size:13px;
+    color:#666;
+    margin-top:5px;
+}
+
+.view-tech-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:45px;
+    background:red;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:800;
+}
+
+.view-tech-btn.small{
+    height:38px;
+    padding:0 12px;
+    font-size:13px;
+}
+
+.view-tech-btn:hover{
+    background:#cc0000;
+}
+
+.back-link{
+    display:inline-block;
+    margin-bottom:20px;
+    color:red;
+    text-decoration:none;
+    font-weight:800;
+}
+
+.tech-detail-card h2{
+    margin:25px 0 15px;
+}
+
+.tech-booking-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.tech-booking-table th,
+.tech-booking-table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+.tech-booking-table th{
+    background:#fafafa;
+    font-weight:800;
+}
+
+.tech-status{
+    padding:7px 12px;
+    border-radius:8px;
+    font-weight:800;
+    font-size:13px;
+}
+
+.tech-status.pending{
+    background:#fff7e6;
+    color:#ff9800;
+}
+
+.tech-status.assigned{
+    background:#fff0df;
+    color:#ff8a00;
+}
+
+.tech-status.in-progress{
+    background:#e8f0ff;
+    color:#1d6cff;
+}
+
+.tech-status.workshop-repair{
+    background:#f4e8ff;
+    color:#8b5cf6;
+}
+
+.empty-row{
+    text-align:center;
+    padding:35px;
+    color:#777;
+}
+
+@media(max-width:1200px){
+    .tech-workload-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:800px){
+    .tech-workload-grid{
+        grid-template-columns:1fr;
+    }
+}
